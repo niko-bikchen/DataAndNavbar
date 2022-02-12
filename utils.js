@@ -46,7 +46,7 @@ const data = [
   },
 ];
 
-function compareTimestamps(a, b) {
+const compareTimestamps = (a, b) => {
   const timestampA = new Date(a.x);
   const timestampB = new Date(b.x);
 
@@ -57,7 +57,7 @@ function compareTimestamps(a, b) {
     return 1;
   }
   return 0;
-}
+};
 
 // Construct a tooltip out of the object containing song names and the number of times each song was played.
 const makeTooltip = (songsData) =>
