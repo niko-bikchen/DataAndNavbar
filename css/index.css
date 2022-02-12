@@ -15,8 +15,8 @@ body {
     height          : 50px;
     padding         : 0 35px;
     background-color: #1d2b38;
-    transition      : padding .2s ease-in-out;
     box-sizing      : border-box;
+    transition      : padding .2s ease-in-out;
 }
 
 .navbar__logo {
@@ -38,6 +38,10 @@ body {
     display        : inline-flex;
     align-items    : center;
     padding-left   : 0;
+}
+
+.navbar__content li {
+    transition: margin-right .2s ease-in-out;
 }
 
 .navbar__content li:not(:last-of-type) {
@@ -81,5 +85,11 @@ body {
 
     .navbar__logo-mini {
         display: initial;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar__content li:not(:last-of-type) {
+        margin-right: 15px;
     }
 }
